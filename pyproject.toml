@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simplstorage"
+version = "0.0.1"
+description = "An easy to use python package that encrypts and serializes data including cross-file capabilities."
+readme = "README.md"
+requires-python = ">=3.8,<3.14"
+dependencies = ["cryptography"]
+
+[tool.hatch.build.targets.wheel]
+include = ["simplstorage.py"]
